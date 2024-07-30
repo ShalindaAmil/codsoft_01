@@ -1,0 +1,384 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    background-image: url('../Assets/background_img.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    color: white;
+    overflow-x: hidden;
+}
+/* .................................................Navigation bar................................................. */
+.navbar{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.767); /* Red background with 50% opacity */
+    color: black;
+    align-items: center;
+    color:white
+}
+.logo{
+    width: 25%;
+    padding-left: 5%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    align-content: center;
+}
+.navigation {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.navigation li,a{
+    list-style-type: none;
+    padding: 10px;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+.navigation-right-side{
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    width: 25%;
+}
+.search_icon{
+    width: 40px;
+    padding: 20px;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+}
+.cart_icon{
+    width: 30px;
+    padding: 20px;
+    padding-right: 25;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+}
+.sign_in_button{
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer; 
+    border: none;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+.navigation a:hover{
+    border-radius:30px;
+    color: black;
+    background-color: white;
+}
+.sign_in_button:hover{
+    border: none;
+    background-color:gray;
+}
+/* .................................................Header section................................................. */
+.header{
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    height:100vh;
+}
+.header-topic{
+    font-weight: bold;
+    font-size: 40px;
+    align-content: center;
+    margin: 5px 0; 
+}
+.header button{
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer; 
+    border: none;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+.header button :hover{
+    background-color: gray;
+}
+/* .................................................About Us section................................................. */
+.aboutUs{
+    text-align: left;
+    width: 100%;
+    height:100vh;
+    padding: 10%;
+}
+.about-us-hero-section{
+    width: 100%;
+    align-content: center;
+    align-items: center;
+}
+.aboutUs-topic{
+    font-weight: bold;
+    font-size: 40px;
+    align-content: center;
+}
+.aboutUs-discription{
+    align-content: center;
+}
+.about-us-details{
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+    display: flex;
+}
+.about-us-details div{
+    width: 100%;
+    padding-right: 10%;
+}
+.about-us-details img{
+    width: 50px;
+    filter: brightness(0) invert(1);
+}
+.about-us-details h2{
+    font-weight: bold;
+    margin: 5px 0
+}
+/* .................................................Menu section................................................. */
+.menu-section{
+    width: 100%;
+}
+.menu-discription{
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+.menu-title{
+    font-weight: bold;
+    font-size: 40px;
+    align-content: center;
+    margin: 2px 0; 
+}
+.menu{
+    text-align: left;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%; 
+}
+.menu div{
+    width: 100%;
+    height: 100%;
+    padding-right: 5%;
+}
+.menu img{
+    width: 100%;
+    height: 50%;
+    border-radius: 5%;
+    cursor: pointer;
+}
+.menu-name{
+    opacity: 0.7;
+    text-align: center;
+}
+.menu .card-01 img,.menu .card-02 img,.menu .card-03 img {
+  border: 8px solid transparent; 
+  transition: border-color 0.3s ease; 
+}
+.menu .card-01:hover img,.menu .card-02:hover img,.menu .card-03:hover img {
+  border-color: tomato; 
+}
+/* .................................................App section................................................. */
+.app{
+    width: 100%;
+    padding: 10%;
+}
+.app-section .app-title{
+    font-weight: bold;
+    font-size: 40px;
+    align-content: center;
+    margin: 2px 0;
+}
+.app-img{
+    cursor: pointer;
+}
+/* .................................................Footer section................................................. */
+.footer-main{
+    background-color: gray;
+    opacity: 0.8;
+    padding: 5%;
+    width: 100%;
+}
+.footer{
+    display: flex;
+    
+}
+.footer-left{
+    width: 30%;
+    padding-right: 5%;
+}
+.footer-left p{
+    font-size: 15px;
+}
+.newsletter{
+    display: flex;
+}
+.newsletter input{
+    border: none;
+}
+.newsletter button{
+   padding: 10px;
+   cursor: pointer; 
+   border: none;
+   color: white;
+   background-color: rgba(46, 43, 43, 0.638);
+}
+.footer-middle{
+    width: 50%;
+    padding-left: 10%;
+}
+.footer-middle > p {
+    font-size: 16px;
+} 
+.footer-middle ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+.footer-middle li {
+    display: flex; 
+    cursor: pointer;
+}
+.footer-middle-right{
+    width: 50%;
+
+}
+.footer-middle-right > p {
+    font-size: 16px;
+} 
+.footer-middle-right ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+.footer-middle-right li {
+    display: flex; 
+    align-items: center;
+    padding: 10px 0; 
+}
+.footer-middle-right li img {
+    margin-right: 10px; 
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1); 
+    cursor: pointer;
+} 
+.footer-middle-right li p {
+    margin: 0; 
+    font-size: 14px;
+    cursor: pointer;
+}
+.footer-right{
+    width: 30%;
+}
+.footer-right > p {
+    font-size: 16px;
+} 
+.footer-right ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+.footer-right li {
+    display: flex; 
+    align-items: center;
+    padding: 10px 0; 
+}
+.footer-right li img {
+    margin-right: 10px; 
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+    cursor: pointer; 
+} 
+.footer-right li p {
+    margin: 0; 
+    font-size: 14px;
+    cursor: pointer;
+}
+hr{
+    padding-right: 40%;
+}
+.footer-bottom{
+    display: flex;
+    width: 100%;
+}
+.coppy-right{
+   width: 50%; 
+   padding-right: 10%;
+}
+.regulations{
+    display: flex;
+    text-decoration: underline;
+    justify-content: right;
+    width: 100%;
+    padding-left: 10%;
+}
+.regulations p{
+    padding-right: 5%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+    .logo, .navigation, .navigation-right-side {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .navigation {
+        justify-content: center;
+    }
+    .navigation-right-side {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .about-us-hero-section, .about-us-details {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    .about-us-details div {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    .about-us-details img {
+        width: 50%;
+    }
+}
+/* .................................................Responsive styles................................................. */
+@media only screen and (max-width: 600px) {
+    .menu, .footer {
+        flex-direction: column;
+        padding: 0;
+    }
+    .menu div, .footer div {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    .footer-left, .footer-middle, .footer-middle-right, .footer-right {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+}
